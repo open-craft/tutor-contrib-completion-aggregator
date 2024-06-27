@@ -8,6 +8,7 @@ See `openedx-aspects#222`_ for more details.
 When enabled in Tutor, this plugin installs:
 
 * OpenCraft's `openedx-completion-aggregator`_ platform plugin
+* `dbt-completion-aggregator`_ dbt extension
 
 Installation
 ************
@@ -30,6 +31,9 @@ Usage
     # Rebuild openedx image to update pip dependencies
     tutor images build openedx
 
+    # Run custom dbt
+    tutor local do dbt -c "run"
+
 License
 *******
 
@@ -39,3 +43,4 @@ This software is licensed under the terms of the AGPLv3.
 .. _openedx-aspects#222: https://github.com/openedx/openedx-aspects/issues/222
 .. _tutor-contrib-aspects: https://github.com/openedx/tutor-contrib-aspects
 .. _openedx-completion-aggregator: https://github.com/open-craft/openedx-completion-aggregator
+.. _dbt-completion-aggregator: https://github.com/open-craft/dbt-completion-aggregator

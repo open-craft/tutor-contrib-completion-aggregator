@@ -39,6 +39,9 @@ hooks.Filters.CONFIG_OVERRIDES.add_items(
         # Add values to override settings from Tutor core or other plugins here.
         # Each override is a pair: (setting_name, new_value). For example:
         ### ("PLATFORM_NAME", "My platform"),
+        # Configure custom dbt package
+        ("DBT_REPOSITORY", "https://github.com/open-craft/dbt-completion-aggregator"),
+        ("DBT_BRANCH", "0.1"),
     ]
 )
 
