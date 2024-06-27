@@ -1,0 +1,2 @@
+recursive-include tutor_completion_aggregator/patches *
+recursive-include tutor_completion_aggregator/templates *
