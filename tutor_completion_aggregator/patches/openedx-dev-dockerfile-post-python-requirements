@@ -1,0 +1,3 @@
+# Install completion aggregator platform plugin
+RUN --mount=type=cache,target=/openedx/.cache/pip,sharing=shared \
+    pip install "openedx-completion-aggregator>=4.2,<4.3"
