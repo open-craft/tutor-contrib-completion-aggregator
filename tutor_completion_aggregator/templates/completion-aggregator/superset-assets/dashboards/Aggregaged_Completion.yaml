@@ -1,0 +1,211 @@
+dashboard_title: Aggregaged Completion
+description: null
+css: ''
+slug: null
+certified_by: ''
+certification_details: ''
+published: true
+uuid: a11bffa4-21d9-4284-a046-f36908339f4e
+position:
+  CHART-explore-1261-1:
+    children: []
+    id: CHART-explore-1261-1
+    meta:
+      chartId: 1261
+      height: 50
+      sliceName: Course Completion
+      uuid: a7846e20-3ad7-4705-b441-8bda24f4ab81
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Kai9e6H7Q9
+    type: CHART
+  CHART-explore-1262-1:
+    children: []
+    id: CHART-explore-1262-1
+    meta:
+      chartId: 1262
+      height: 50
+      sliceName: Section Completion
+      uuid: d0472ea7-dae3-4a63-a056-4f6a10160ea7
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-yslusM3W3
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - ROW-DM9pC1zkOc
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Aggregaged Completion
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-DM9pC1zkOc:
+    children:
+    - CHART-explore-1262-1
+    - CHART-explore-1261-1
+    id: ROW-DM9pC1zkOc
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  chart_configuration:
+    '1261':
+      crossFilters:
+        chartsInScope:
+        - 1262
+        scope: global
+      id: 1261
+    '1262':
+      crossFilters:
+        chartsInScope:
+        - 1261
+        scope: global
+      id: 1262
+  color_scheme: ''
+  color_scheme_domain: []
+  cross_filters_enabled: true
+  expanded_slices: {}
+  global_chart_configuration:
+    chartsInScope:
+    - 1261
+    - 1262
+    scope:
+      excluded: []
+      rootPath:
+      - ROOT_ID
+  label_colors: {}
+  native_filter_configuration:
+  - cascadeParentIds: []
+    chartsInScope:
+    - 1261
+    - 1262
+    controlValues:
+      defaultToFirstItem: false
+      enableEmptyFilter: false
+      inverseSelection: false
+      multiSelect: true
+      searchAllOptions: false
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    description: ''
+    filterType: filter_select
+    id: NATIVE_FILTER-snvJBWzI-
+    name: Organization
+    scope:
+      excluded: []
+      rootPath:
+      - ROOT_ID
+    tabsInScope: []
+    targets:
+    - column:
+        name: org
+      datasetUuid: 38488934-35ee-5404-9acc-7e67626ddfae
+    type: NATIVE_FILTER
+  - cascadeParentIds:
+    - NATIVE_FILTER-snvJBWzI-
+    chartsInScope:
+    - 1262
+    controlValues:
+      defaultToFirstItem: false
+      enableEmptyFilter: false
+      inverseSelection: false
+      multiSelect: true
+      searchAllOptions: false
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    description: ''
+    filterType: filter_select
+    id: NATIVE_FILTER-u3B9bvK8m
+    name: Course
+    scope:
+      excluded:
+      - 1261
+      rootPath:
+      - ROOT_ID
+    tabsInScope: []
+    targets:
+    - column:
+        name: course_name
+      datasetUuid: 38488934-35ee-5404-9acc-7e67626ddfae
+    type: NATIVE_FILTER
+  - chartsInScope: []
+    description: ''
+    id: NATIVE_FILTER_DIVIDER-65ly5yjl5
+    scope:
+      excluded: []
+      rootPath:
+      - ROOT_ID
+    tabsInScope: []
+    title: Time Filters
+    type: DIVIDER
+  - cascadeParentIds: []
+    chartsInScope:
+    - 1261
+    - 1262
+    controlValues:
+      enableEmptyFilter: false
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    description: ''
+    filterType: filter_time
+    id: NATIVE_FILTER-Zn4JN5Huy
+    name: Date
+    scope:
+      excluded: []
+      rootPath:
+      - ROOT_ID
+    tabsInScope: []
+    targets:
+    - {}
+    type: NATIVE_FILTER
+  - cascadeParentIds: []
+    chartsInScope:
+    - 1261
+    - 1262
+    controlValues:
+      enableEmptyFilter: false
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    description: ''
+    filterType: filter_timegrain
+    id: NATIVE_FILTER-kQCk20Juq
+    name: Time Grain
+    scope:
+      excluded: []
+      rootPath:
+      - ROOT_ID
+    tabsInScope: []
+    targets:
+    - datasetUuid: 32d887ee-d2cd-4220-a5f6-aff37e4e8083
+    type: NATIVE_FILTER
+  refresh_frequency: 0
+  shared_label_colors:
+    Open edX Demo Course: '#FF7F44'
+    Test A: '#454E7C'
+  timed_refresh_immune_slices: []
+version: 1.0.0

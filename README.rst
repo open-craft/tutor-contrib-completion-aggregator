@@ -9,6 +9,7 @@ When enabled in Tutor, this plugin installs:
 
 * OpenCraft's `openedx-completion-aggregator`_ platform plugin
 * `dbt-completion-aggregator`_ dbt extension
+* `custom Superset assets`_: dataset, dashboard, and charts
 
 Installation
 ************
@@ -34,6 +35,9 @@ Usage
     # Run custom dbt
     tutor local do dbt -c "run"
 
+    # Import and the assets added by this plugin
+    tutor local do import-assets
+
 License
 *******
 
@@ -44,3 +48,4 @@ This software is licensed under the terms of the AGPLv3.
 .. _tutor-contrib-aspects: https://github.com/openedx/tutor-contrib-aspects
 .. _openedx-completion-aggregator: https://github.com/open-craft/openedx-completion-aggregator
 .. _dbt-completion-aggregator: https://github.com/open-craft/dbt-completion-aggregator
+.. _custom Superset assets: tutor_completion_aggregator/templates/superset-assets
